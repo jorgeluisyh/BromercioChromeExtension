@@ -11,7 +11,7 @@
   "action": {
     "default_popup":"popup.html"
   },
-  "icons": { "16": "unlock.png",
-    "48": "unlock.png",
-   "128": "unlock.png" }
+  "icons": { "16": "unlock128.png",
+    "48": "unlock128.png",
+   "128": "unlock128.png" }
 }
