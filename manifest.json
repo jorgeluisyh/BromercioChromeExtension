@@ -5,7 +5,6 @@
   "description": "Read the private stories of El Bromercio",
   "author": "Fsociety",
   "permissions": [
-    "storage",
     "tabs"
   ],
   "action": {
