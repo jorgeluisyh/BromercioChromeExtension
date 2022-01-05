@@ -1,0 +1,10 @@
+
+titulo
+<h1 [^<\/]*class\s*=\s*["'][^<\/]*sht__title[^<\/]*["'][^>]*>([^<\/]*)<\/h1>/gm
+
+resumen
+<h2 [^<\/]*class\s*=\s*["'][^<\/]*sht__summary[^<\/]*["'][^>]*>([^<\/]*)<\/h2>/gm
+
+img
+/<img [^<\/]*src\s*=\s*["']([^<]*.jpg)["'][^>]*[^<\/]*\s*class\s*=\s*["'][^<\/]* s-multimedia__image w-full o-cover s-multimedia__image--big\s*["']\/>/gm
+

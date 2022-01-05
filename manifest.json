@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "El bromercio chrome extension",
+  "version": "1.0",
+  "description": "Read the private stories of El Bromercio",
+  "author": "Fsociety",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "action": {
+    "default_popup":"popup.html"
+  },
+  "icons": { "16": "unlock.png",
+    "48": "unlock.png",
+   "128": "unlock.png" }
+}

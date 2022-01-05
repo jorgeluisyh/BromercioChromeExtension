@@ -1,0 +1,9 @@
+
+body {
+  background-image: url('images/yellow-black-grunge.jpg');
+}
+.title{font-family:'Canterbury'; font-size:23px; -webkit-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s}
+
+.container {
+  background-color: #EBEBEB;
+}
