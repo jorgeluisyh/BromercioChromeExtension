@@ -1,13 +1,12 @@
 {
   "manifest_version": 2,
   "name": "El bromercio chrome extension",
-  "version": "1.0",
+  "version": "1.1.",
   "description": "Project to access news from popular peruvian newspapers (pink and yellow)",
-  "author": "Fsociety",
+  "author": "jorgeluisyh",
   "permissions": [
 
-    "activeTab",
-    "tabs"
+    "activeTab"
   ],
   "browser_action": {
     "default_popup":"popup.html"
@@ -17,7 +16,7 @@
    "128": "unlock128.png" },
 
    "content_scripts": [{
-    "matches": ["https://elcomercio.pe/*"],
+    "matches": ["https://elcomercio.pe/*","https://gestion.pe/*"],
     "js": ["content.js"]
 }]
 }
