@@ -13,13 +13,47 @@ chrome.runtime.onMessage.addListener(
 	}
 );
 
+function deleteAllCookies() {
+	var cookies = document.cookie.split(";");
+	for (var i = 0; i < cookies.length; i++) {
+		var cookie = cookies[i];
+		var eqPos = cookie.indexOf("=");
+		var name = eqPos > -1 ? cookie.substring(0, eqPos) : cookie;
+		document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+	}}
+
 function ReadArticles(){
+	deleteAllCookies();
+
+	swal({
+        background: 'rgba(0,0,123,0.001) ',
+        showConfirmButton: false,
+        backdrop: `
+            rgba(0,0,123,0.4)
+            url("/images/snail_loading.gif")
+            center center
+            no-repeat
+        `
+        })
+
+	if(document.querySelector('.tp-modal-open')){
+		document.querySelector('.tp-modal-open').removeAttribute("style");
+		document.querySelector('.tp-modal-open').className = document.querySelector('.tp-modal-open').className.replace('tp-modal-open', '');
+	}
+
+	if(document.querySelector('.tp-modal')){
+		document.querySelector('.tp-modal').removeAttribute("style");
+	}
+	if(document.querySelector('.tp-backdrop.tp-active')){
+		document.querySelector('.tp-backdrop.tp-active').removeAttribute("style");
+	}
+
 	if(document.querySelector('.overflow-hidden')){
 		document.querySelector('.overflow-hidden').style.overflow = "scroll"; 
 	}
 
     if(document.querySelector('#sign-modal')){
-		document.querySelector('#sign-modal').firstElementChild.style.display = "none"; 
+		document.querySelector('#sign-modal').style.display = "none";
 	}
 		 
 	if(document.querySelector('#contenedor')){
@@ -37,6 +71,13 @@ function ReadArticles(){
         document.querySelector('#_adr_abp_container_1').removeAttribute("style");
 		document.querySelector('#_adr_abp_container_1').style.display = "none";
 	}
+
+	if(document.querySelector('.app_gdpr--2k2uB')){
+		document.querySelector('.app_gdpr--2k2uB').removeAttribute("style");
+		document.querySelector('.app_gdpr--2k2uB').style.display = "none";
+	}
+
+	// swal.clickConfirm();
 }
 
 // funcion no implementada
