@@ -30,7 +30,7 @@ function ReadArticles(){
         showConfirmButton: false,
         backdrop: `
             rgba(0,0,123,0.4)
-            url("/images/snail_loading.gif")
+            url("https://raw.githubusercontent.com/jorgeluisyh/BromercioChromeExtension/main/images/snail_loading.gif")
             center center
             no-repeat
         `
@@ -77,7 +77,7 @@ function ReadArticles(){
 		document.querySelector('.app_gdpr--2k2uB').style.display = "none";
 	}
 
-	// swal.clickConfirm();
+	swal.clickConfirm();
 }
 
 // funcion no implementada
