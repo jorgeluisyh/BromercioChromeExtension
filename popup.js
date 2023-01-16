@@ -6,5 +6,5 @@ let navClick = function(command){
 	});
 };
 
-document.getElementById("btnAccess").addEventListener("click", function(){ navClick('readArticles') });
+document.getElementById("btnAccess").addEventListener("click", function(){ navClick('readAll') });
 document.getElementById("btnRemoveAds").addEventListener("click", function(){ navClick('removeAds') });

@@ -1,11 +1,19 @@
 
-body {
-  background-image: url('images/yellow-black-grunge.jpg');
+.title {
+	padding: 20px;
+	margin-top: 0px;
+	vertical-align:middle;
+	font-family: 'Canterbury';
+	font-size: 23px;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s
 }
-.title{font-family:'Canterbury'; font-size:23px; -webkit-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s}
+
 
 .container {
-  background-color: #EBEBEB;
+	background-color: transparent;
+	font-family:serif;
 }
 
 body {
@@ -15,9 +23,9 @@ body {
 	background-repeat: no-repeat;
 	background-size: 800% 400%;
 	background-attachment: fixed;
-	background-image: linear-gradient(120deg,#f1a738,#ffea32,#f0e444,#f0f4f8,#f17abc,#e7649b);
+	background-image: linear-gradient(120deg, #f1a738, #ffea32, #f0e444, #f0f4f8, #f17abc, #e7649b);
 	animation-name: rp_bganimation;
-	animation-duration: 5s;
+	animation-duration: 10s;
 	animation-timing-function: linear;
 	animation-delay: 0;
 	animation-iteration-count: infinite;
@@ -25,39 +33,46 @@ body {
 	animation-play-state: running;
 	will-change: background-position;
 }
+
 @keyframes rp_bganimation {
-    0% {
-        background-position: 0 50%
-    }
-    100% {
-        background-position: 100% 50%
-    }
+	0% {
+		background-position: 0 50%
+	}
+
+	100% {
+		background-position: 100% 50%
+	}
 }
 
 .container {
 	width: 150px;
-    max-height: 200px;
+	max-height: 200px;
 	text-align: center;
 }
 
-.credit{
+.credit {
 	display: block;
 	font-size: 0.75em;
 }
 
-input[type=button]{
+input[type=button] {
 	font-size: 20px;
 	cursor: pointer;
 	padding: 0 10px;
-    margin: 5px 0;
-    min-width: 80px;
+	margin: 5px 0;
+	min-width: 80px;
 	min-height: 30px;
 	border-radius: 15px;
 	outline: none;
 	border-color: white;
 }
 
-input:hover[type=button]{
+input:hover[type=button] {
 	font-weight: bolder;
+	text-decoration: underline;
 	box-shadow: white 0px 0px 5px 5px;
+}
+
+.summary {
+	margin: 5px 5px 0px 5px;
 }

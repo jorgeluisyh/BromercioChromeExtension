@@ -77,6 +77,7 @@ function ReadArticles(){
 		document.querySelector('.app_gdpr--2k2uB').style.display = "none";
 	}
 
+
 	swal.clickConfirm();
 }
 
