@@ -43,6 +43,7 @@ function ReadArticles(){
 
 	if(document.querySelector('.tp-modal')){
 		document.querySelector('.tp-modal').removeAttribute("style");
+		document.querySelector('.tp-modal').style.display = "none";
 	}
 	if(document.querySelector('.tp-backdrop.tp-active')){
 		document.querySelector('.tp-backdrop.tp-active').removeAttribute("style");
@@ -91,7 +92,12 @@ function removeAds(){
 }
 
 window.onload = function () {
-	ReadArticles();
-	setInterval(ReadArticles(), 10000);    
-	console.clear();
+
+	let currenturl = window.location.toString();
+
+	if (/elcomercio.pe|gestion.pe|depor.com/.test(currenturl)) {
+		ReadArticles();
+		setInterval(ReadArticles(), 10000);    
+		console.clear();
+	 }
   };
